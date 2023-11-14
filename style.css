@@ -27,24 +27,3 @@
   align-items: center;
   justify-content: center;
 }
-
-nav {
-  background-color: #333;
-  overflow: hidden;
-}
-
-/* Style the navigation links */
-nav a {
-  float: none;
-  display: flexbox;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: underline;
-}
-
-/* Add a color on hover */
-nav a:hover {
-  background-color: #f52626;
-  color: black;
-}

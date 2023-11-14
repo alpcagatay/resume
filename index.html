@@ -4,15 +4,13 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Alp</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Alp Cagatay Batuhan</title>
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <!--Navbar  -->
-
-    <nav>Home</nav>
 
     <!--Navbar End  -->
 
@@ -36,6 +34,34 @@
         backSpeed: 75,
         loop: true,
       });
+    </script>
+    <!--TypeScript Animation  -->
+
+    <!--Tab Animation  -->
+    <script>
+      var character = 2;
+      var msg = "👋 Hello, I'm Alp";
+      var currentTitle = document.title;
+      function counter() {
+        counter.timer = setInterval(function () {
+          document.title =
+            msg.substring(character, msg.length) + msg.substring(0, character);
+          character++;
+          if (character > message.length) {
+            character = 0;
+          }
+        }, 500);
+      }
+      function stop() {
+        clearInterval(counter.timer);
+      }
+      window.onblur = function () {
+        counter();
+      };
+      window.onfocus = function () {
+        stop();
+        document.title = currentTitle;
+      };
     </script>
     <!--TypeScript Animation  -->
   </body>
